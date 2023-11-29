@@ -75,7 +75,7 @@ def download():
 
 
 #icon
-image_icon=PhotoImage(file="speak.png")
+image_icon=PhotoImage(file="speaker.png")
 root.iconphoto(False,image_icon)
 
 #Top Frame
@@ -89,7 +89,7 @@ Label(Top_frame,text="TEXT TO SPEECH",font="arial 20 bold",bg="white",fg="black"
 
 
 #########
-text_area=Text(root,font="Robote 20",bg="whiet",relief=GROOVE,wrap=WORD)
+text_area=Text(root,font="Robote 20",bg="white",relief=GROOVE,wrap=WORD)
 text_area.place(x=10,y=150,width=500,height=250)
 
 Label(root,text="VOICE",font="arial 15 bold",bg="#305065",fg="white").place(x=580,y=160)
@@ -103,7 +103,7 @@ speed_combobox=Combobox(root,values=['Fast','Normal','Slow'],font="arial 14",sta
 speed_combobox.place(x=730,y=200)
 speed_combobox.set('Normal')
 
-imageicon=PhotoImage(file="speak.png")
+imageicon=PhotoImage(file="speaker.png")
 btn=Button(root,text="Speak",compound=LEFT,image=imageicon,width=130,font="arial 14 bold",command=speaknow)
 btn.place(x=550,y=280)
 
